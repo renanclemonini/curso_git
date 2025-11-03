@@ -1,0 +1,24 @@
+GIT - Banco de versões
+git clone vai clonar o repositório remoto 
+git commit grava alterações no repositório
+git pull para atualizar o repositório local com o que esta no remoto (busca e mescla)
+git push empurra as alterações do local para o remoto 
+
+GITHUB - servidor onde hospeda o código
+
+Configurando GIT
+git config --global user.name "Renan Clemonini"
+git config --global user.email "rclemon93@gmail.com"
+
+git config init.defaultBranch -> mostra a branch padrão configurada
+
+git config --global init.defaultBranch main -> altera a padrão para main
+
+git config --global credential.helper cache (armazena temporariamente) // store (armazena permanente)
+token tem data de expiração
+
+git clone <link> nome personalizado -> para clonar e dar um outro nome para a pasta
+
+git add remote origin <link>
+
+git clone <url> --branch feature-1 --single-branch 
