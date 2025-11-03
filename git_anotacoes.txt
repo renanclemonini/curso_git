@@ -22,3 +22,22 @@ git clone <link> nome personalizado -> para clonar e dar um outro nome para a pa
 git add remote origin <link>
 
 git clone <url> --branch feature-1 --single-branch 
+
+.gitkeep é uma convenção para marcar pastas vazias
+
+git restore <nome-arquivo> -> restaura o arquivo no repositório local conforme a ultima atualização no repositório remoto (ele descarta todas alterações realizadas)
+
+git commit --amend -m "mensagem para ser alterada do ultimo commit" -> altera a mensagem do ultimo commit
+
+se fizer "git commit --amend" puro ele abre o editor de texto (nano/vim) para editar o ultimo commit... e para sair precisa clicar esc > :wq e enter
+
+git reset --soft <hash_commit> -> restaura o commit com as mudanças antes do commit e deixa já trackeado
+
+git reset --mixed <hash_commit> -> restaura o commit com as mudanças do commit e deixa 'destrackeado'
+
+git reset --hard <hash_commit> restaura o commit e desconsidera as alterações excluindo elas e o commit será apagado da arvore de log
+
+git reflog -> exibe o histórico de commits em lista
+
+git reset <nome_arquivo> OU git restore --staged <nome_arquivo> => remove o arquivo da área de transferência pré commit 
+
