@@ -41,3 +41,36 @@ git reflog -> exibe o histórico de commits em lista
 
 git reset <nome_arquivo> OU git restore --staged <nome_arquivo> => remove o arquivo da área de transferência pré commit 
 
+git checkout -b teste -> trocar da branch atual, criar uma nova chamada teste e alternar pra ela 
+
+git checkout main -> retorna pra branch main 
+
+git branch -v -> exibe o ultimo commit de cada branch
+
+git branch -> lista as branchs
+
+git merge teste -> faz o merge das branchs
+
+git branch -d teste -> vai excluir a branch teste
+
+---- conflito de merge
+
+fazer git pull, editar o arquivo resolvendo o conflito, fazer novo commit e enviar push
+
+o git pull é a execução do git fetch + git merge em conjunto
+
+git fetch origin main -> para baixar as alterações do repositório remoto mas sem fazer o merge
+
+git diff main origin/main -> para ver as alterações
+
+git merge origin/main -> depois de baixar as atualizações, ver a diferença, então usa para fazer o merge do local com o remoto 
+
+git clone <url> --branch teste --single-branch -> comando para baixar apenas a branch teste, se não passar ele só clona a branch principal
+
+git stash -> Criar uma nova branch mas sem enviar uma modificação junto (após deletar um determinado arquivo por exemplo)
+
+git stash list -> vai mostrar a alteração que foi arquivada
+
+git stash pop -> para trazer as alterações e excluir da pilha de memoria
+
+git stash apply -> trazer as alterações e manter a modificação na lista do stash
