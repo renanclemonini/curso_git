@@ -1,6 +1,8 @@
 # DIO | Resumos Git e Github
 
-Repositório para armazenar resumo das aulas
+Repositório para armazenar resumo das aulas (essa descrição foi feita estudando markdown)
+
+Curso fechado com nota 10
 
 ## Documentações
 
